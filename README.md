@@ -1,9 +1,15 @@
 eTicTacToe
 =========
 
-TicTacToe game in Erlang
+Simple Tic-Tac-Toe game in Erlang, human player vs bot computer
 
-To compile run:
+### Using
+
+git clone git://github.com/Tremax/eTicTacToe.git
+
+cd eTicTacToe
+
+mkdir ebin
 
 erlc -o ebin ./src/*.erl
 

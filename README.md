@@ -1,5 +1,4 @@
-eTicTacToe
-=========
+#eTicTacToe
 
 Simple Tic-Tac-Toe game in Erlang, human player vs bot computer
 

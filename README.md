@@ -7,6 +7,7 @@ Simple Tic-Tac-Toe game in Erlang, human player vs bot computer
     git clone git://github.com/Tremax/eTicTacToe.git
     cd eTicTacToe
     erlc -o ebin ./src/*.erl
-    cd ebin & erl
+    cd ebin
+    erl
 	
 	main:s(PORT).

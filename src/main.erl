@@ -55,7 +55,9 @@ client_loop(Socket, MovesX, MovesY) ->
 				
 				{"/play",[{"x",Xin}, {"y",Yin}, {"aggress", Ain}]} ->
 					
-					X = list_to_integer(Xin), Y = list_to_integer(Yin), A = list_to_float(Ain),
+					X = list_to_integer(Xin), Y = list_to_integer(Yin), 
+					
+					A = case string:to_float(Ain) of {F, []} -> F; {error, no_float} -> list_to_integer(Ain) end,
 
 					Aggress = case  A < 0.1 orelse A > 3.6 of true -> 0.8; false -> A end, % проверка на корректность
 
